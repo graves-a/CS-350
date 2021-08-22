@@ -1,0 +1,37 @@
+
+**** Build of configuration MCU+Image for project pwmled2_CC3220S_LAUNCHXL_nortos_ccs ****
+
+/Applications/ti/ccs1030/ccs/utils/bin/gmake -k -j 7 all -O 
+ 
+Building file: "../pwmled2.c"
+Invoking: Arm Compiler
+"/Applications/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=vfplib -me --include_path="/Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs" --include_path="/Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs/MCU+Image" --include_path="/Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02/source" --include_path="/Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02/kernel/nortos" --include_path="/Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02/kernel/nortos/posix" --include_path="/Applications/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --define=NORTOS_SUPPORT -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="pwmled2.d_raw" --include_path="/Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs/MCU+Image/syscfg"  "../pwmled2.c"
+Finished building: "../pwmled2.c"
+ 
+Building target: "pwmled2_CC3220S_LAUNCHXL_nortos_ccs.out"
+Invoking: Arm Linker
+"/Applications/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=vfplib -me --define=NORTOS_SUPPORT -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"pwmled2_CC3220S_LAUNCHXL_nortos_ccs.map" -i"/Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02/source" -i"/Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02/kernel/nortos" -i"/Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs/MCU+Image/syscfg" -i"/Applications/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="pwmled2_CC3220S_LAUNCHXL_nortos_ccs_linkInfo.xml" --entry_point=resetISR --rom_model -o "pwmled2_CC3220S_LAUNCHXL_nortos_ccs.out" "./main_nortos.obj" "./pwmled2.obj" "./syscfg/ti_drivers_config.obj" "../cc32xxs_nortos.cmd"  -lti_utils_build_linker.cmd.genlibs -l"ti/devices/cc32xx/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "pwmled2_CC3220S_LAUNCHXL_nortos_ccs.out"
+ 
+/Applications/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armobjcopy -O binary --only-section .text --only-section .const --only-section .cinit --only-section .resetVecs pwmled2_CC3220S_LAUNCHXL_nortos_ccs.out pwmled2_CC3220S_LAUNCHXL_nortos_ccs.bin
+/Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02/source/ti/drivers/net/imagecreator/bin/SLImageCreator syscfg create_image --sdk_path /Users/Alan/ti/simplelink_cc32xx_sdk_5_10_00_02 --json /Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs/MCU+Image/syscfg/ti_drivers_net_wifi_config.json --file /Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs/MCU+Image/syscfg/pwmled2_CC3220S_LAUNCHXL_nortos_ccs.sli --mcu  /Users/Alan/CS350/pwmled2_CC3220S_LAUNCHXL_nortos_ccs/MCU+Image/pwmled2_CC3220S_LAUNCHXL_nortos_ccs.bin
+INFO:root:FTDI not detected, trying XDS
+INFO:root:
+Error: SLImageCreator.exe: XDS not detected
+makefile:168: recipe for target 'post-build' failed
+Traceback (most recent call last):
+  File "SLImageCreator.py", line 5262, in <module>
+  File "SLImageCreator.py", line 5258, in main
+  File "SLImageCreator.py", line 5228, in cmdline
+  File "SLImageCreator.py", line 4653, in command_sysconfig_create_image
+  File "SLImageCreator.py", line 2498, in create_image_from_sysconfig
+  File "SLImageCreator.py", line 1552, in connect_device
+  File "slutils/slutils.py", line 252, in auto_detect
+slutils.slutils.DeviceError: 
+Error: SLImageCreator.exe: Auto detect failure
+[16316] Failed to execute script SLImageCreator
+gmake[2]: [post-build] Error 255 (ignored)
+ 
+
+**** Build Finished ****

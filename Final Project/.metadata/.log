@@ -1,0 +1,1898 @@
+!SESSION 2021-08-15 22:10:57.066 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-08-15 22:11:29.769
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-08-15 22:11:29.771
+!MESSAGE debugServerDir=C:/ti/ccs1040/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.415
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.418
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.419
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.421
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.422
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.426
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.429
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.432
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.435
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-15 22:11:32.446
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.equinox.event 4 0 2021-08-15 22:11:33.758
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@638d624a (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@73417494, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@638d624a (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@73417494, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@74f54f8e
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.lambda$0(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4629)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:139)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:188)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:572)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:963)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:95)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1505)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:119)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:345)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:687)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1086)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:50)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElementsRecursive(ModelServiceImpl.java:176)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:438)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:431)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.findValidElementsToMinimize(MinMaxAddon.java:824)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:767)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:696)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:387)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 92 more
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-08-15 22:11:34.021
+!MESSAGE CCS HTTP adapter started! [ccs.port:51406] - Open 'http://localhost:51406/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-08-15 22:11:35.910
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1040/ccs
+	Workspace location: C:/Users/1grav/Documents/CS-350/AlanGraves_Final
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-08-15 22:11:54.438
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-08-15 22:12:40.548
+!MESSAGE Indexed 'gpiointerrupt_CC3220S_LAUNCHXL_nortos_ccs' (2 sources, 8 headers) in 0.288 sec: 81 declarations; 312 references; 1 unresolved inclusions; 0 syntax errors; 14 unresolved names (3.4%)
+
+!ENTRY org.eclipse.ui 2 2 2021-08-15 22:39:11.161
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.547
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.548
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.549
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.550
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.551
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.552
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.629
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.630
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.631
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.632
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.633
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:39:21.634
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:38.981
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:38.982
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:38.983
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:38.984
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:38.985
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:38.985
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:39.015
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:39.016
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:39.017
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:39.017
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:39.018
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:40:39.019
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.106
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.107
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.109
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.109
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.110
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.111
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.134
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.135
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.136
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.137
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.138
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:51:07.139
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.643
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.644
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.645
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.646
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.647
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.648
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.677
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.678
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.679
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.681
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.682
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 22:52:07.682
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY org.eclipse.jface 2 0 2021-08-15 23:07:51.196
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-15 23:07:51.196
+!MESSAGE A conflict occurred for ALT+C:
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.refactor.extract.constant,Extract Constant - Refactoring ,
+		Extracts a constant for the selected expression,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a37a695,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bcbb7a6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-15 23:07:51.196
+!MESSAGE A conflict occurred for ALT+E:
+Binding(ALT+E,
+	ParameterizedCommand(Command(com.ti.ccstudio.debug.ui.command.restoreDebugState,Restore Debug State,
+		Restore debug state for the selected core(s),
+		Category(com.ti.ccstudio.debug.ui.commandCategory,Code Composer Studio Debug Commands,Set of commands for Code Composer Studio debug actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@71a00c76,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(ALT+E,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bcbb7a6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2021-08-15 23:07:51.227
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-15 23:07:51.227
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.c.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b37e304,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5bf34f82,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-15 23:07:51.227
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.maximize,Maximize Active View or Editor,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ab7e4c8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d58126e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.468
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.469
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.470
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.471
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.471
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.472
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.495
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.496
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.497
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.497
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.498
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:08:55.499
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.695
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.698
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.699
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.700
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.701
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.702
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.731
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.733
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.734
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.735
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.736
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:12:23.737
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.698
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.699
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.700
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.701
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.701
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.702
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.725
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.726
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.727
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.727
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.728
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:14:11.729
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.088
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.091
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.092
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.093
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.094
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.095
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.122
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.123
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.124
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.125
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.126
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:16:29.127
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.928
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.930
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.931
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.932
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.933
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.934
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.960
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.961
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.962
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.963
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.964
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:17:41.964
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-08-15 23:18:39.299
+!MESSAGE DS_ERROR: CS_DAP: Error connecting to the target: (Error -1170 @ 0x0) Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK). (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-08-15 23:18:39.364
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -1170 @ 0x0)
+Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK).
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.384
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.385
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.386
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.387
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.388
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.388
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.414
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.415
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.416
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.417
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.418
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:18:54.419
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.823
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.825
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.826
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.827
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.827
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.828
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.850
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.850
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.852
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.852
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.853
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:20:49.854
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.215
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.216
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.218
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.219
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.223
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.226
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.250
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.251
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.252
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.253
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.253
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:21:29.254
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.911
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.914
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.916
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.917
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.918
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.924
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.946
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.947
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.948
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.948
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.949
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:29:07.950
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-08-15 23:30:09.753
+!MESSAGE DS_ERROR: CS_DAP: Error connecting to the target: (Error -1170 @ 0x0) Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK). (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-08-15 23:30:09.791
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -1170 @ 0x0)
+Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK).
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.897
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.898
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.900
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.901
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.901
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.902
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.927
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.928
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.929
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.929
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.930
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:30:24.931
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.892
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.895
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.897
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.898
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.900
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.901
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.948
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.949
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.949
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.950
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.951
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-15 23:41:00.952
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.353
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.355
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.355
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.356
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.357
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.358
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.387
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.387
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.388
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.389
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.390
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-16 00:40:16.391
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 07:04:25.164
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 07:04:25.165
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 07:04:25.166
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 07:04:25.167
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 07:04:25.168
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 07:04:25.169
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 07:04:25.169
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 07:04:25.170
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2021-08-18 20:39:13.392 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-08-18 20:39:17.245
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-08-18 20:39:17.247
+!MESSAGE debugServerDir=C:/ti/ccs1040/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-08-18 20:39:28.830
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1040/ccs
+	Workspace location: C:/Users/1grav/Documents/CS-350/AlanGraves_Final
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:29.209
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:29.209
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:29.210
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:29.213
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:29.214
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:30.097
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:30.313
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:30.488
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:30.688
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-08-18 20:39:31.218
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-08-18 20:39:31.281
+!MESSAGE CCS HTTP adapter started! [ccs.port:57519] - Open 'http://localhost:57519/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.249
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.250
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.251
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.251
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.252
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.253
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.653
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.672
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.673
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Clock Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.675
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Power Down Desired: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.676
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+In Reset: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY com.ti.ccstudio.debug.ui 2 0 2021-08-18 20:46:08.676
+!MESSAGE Invalid Target Status found in Texas Instruments XDS110 USB Debug Probe/Cortex_M4_0
+Reset Control: IP_TAP_CNTL_$(.port-16) is converted to IP_TAP_CNTL_-16
+
+!ENTRY org.eclipse.jface 2 0 2021-08-18 20:59:09.194
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-18 20:59:09.194
+!MESSAGE A conflict occurred for ALT+C:
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.refactor.extract.constant,Extract Constant - Refactoring ,
+		Extracts a constant for the selected expression,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@120242d9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25e9aa44,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.TerminalContext,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2021-08-18 20:59:09.218
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-18 20:59:09.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.c.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@361e653f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.copy,Copy,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@743f709a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-18 20:59:09.218
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.maximize,Maximize Active View or Editor,
+		,
+		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@69f5a73c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.tm.terminal.EditContext,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c6f19ac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 22:55:48.934
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 22:55:48.936
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 22:55:48.936
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 22:55:48.937
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:259)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsole.setBackground(BuildConsole.java:133)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:338)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 22:55:48.939
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 22:55:48.940
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-08-18 22:55:48.941
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-08-18 22:55:48.942
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:166)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
